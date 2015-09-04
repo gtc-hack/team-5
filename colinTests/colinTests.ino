@@ -12,6 +12,7 @@ void setup() {
   Robot.beginTFT();
   Robot.beginSD();
   Robot.displayLogos();
+  Robot.beginSpeaker();
 
 }
 
@@ -19,7 +20,8 @@ void loop() {
   // put your main code here, to run repeatedly:
   if (detectMovement())
   {
-    alertDetected();
+    actionOnDetect();
+
   }
   else
   {
@@ -28,8 +30,17 @@ void loop() {
 
 }
 
+void actionOnDetect() {
+  alertDetected();
+  acquireTarget();
+  alertLockedOn();
+  moveToTarget();
+  alertAtTarget();
+}
+
 void alertDetected() {
-  delay(10);
+  Robot.beep(BEEP_SIMPLE);
+  delay(1000);
 }
 
 void sentinel() {
@@ -45,6 +56,9 @@ void alertLockedOn() {
 }
 
 void moveToTarget() {
+}
+
+void alertAtTarget() {
 }
 
 int detectMovement() {
