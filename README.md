@@ -16,4 +16,12 @@
 achieved by the robot moving in small rotational increments in both directions until the edges of detection has been
 determined and then rotate to half way between these two limits. The robot should now be pointing directly at the targe.
 
+##### Proposed methods
 
+###### detectMovement
+###### alertDetected
+###### actionOnDetect
+* acquireTarget
+* alertLockedOn
+* moveToTarget
+* alertAtTarget
