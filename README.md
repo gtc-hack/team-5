@@ -5,7 +5,7 @@
 
 #### Detect target - Stationery robot, moving target
 
-#### After detection of target (some audio/visual indication), target must stop
+#### After detection of target's movement (some audio/visual indication), target must stop moving.
 
 1) The target must move across the robot's PIR sensor range and stop when the robot detects the movement.
 
