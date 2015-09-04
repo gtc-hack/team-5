@@ -3,6 +3,9 @@
 
 ### Implementation of a Sentinal Mode Detector
 
+#### Note: There is a serious error in the core library Motors.cpp code.
+##### The fix can be found at http://forum.arduino.cc/index.php?topic=314164.0
+
 #### Detect target - Stationery robot, moving target
 
 #### After detection of target's movement (some audio/visual indication), target must stop moving.
