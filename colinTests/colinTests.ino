@@ -36,6 +36,17 @@ void sentinel() {
   delay(10);
 }
 
+void acquireTarget() {
+  
+}
+
+void alertLockedOn() {
+
+}
+
+void moveToTarget() {
+}
+
 int detectMovement() {
   int sensorValue = Robot.digitalRead(sensor);
   return sensorValue; 
